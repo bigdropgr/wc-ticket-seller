@@ -1,0 +1,244 @@
+/**
+ * All of the CSS for the admin-specific functionality of the plugin.
+ */
+
+/* Admin Wrap */
+.wc-ticket-seller-admin-wrap {
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+/* Admin Headings */
+.wc-ticket-seller-admin-heading {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Admin Form */
+.wc-ticket-seller-admin-form {
+    max-width: 100%;
+}
+
+.wc-ticket-seller-admin-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.wc-ticket-seller-admin-form input[type="text"],
+.wc-ticket-seller-admin-form input[type="number"],
+.wc-ticket-seller-admin-form input[type="datetime-local"],
+.wc-ticket-seller-admin-form textarea,
+.wc-ticket-seller-admin-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.wc-ticket-seller-admin-form textarea {
+    min-height: 100px;
+}
+
+.wc-ticket-seller-admin-form .form-row {
+    margin-bottom: 15px;
+}
+
+.wc-ticket-seller-admin-form .required {
+    color: #dc3232;
+}
+
+/* Admin Tables */
+.wc-ticket-seller-admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.wc-ticket-seller-admin-table th,
+.wc-ticket-seller-admin-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.wc-ticket-seller-admin-table th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+}
+
+.wc-ticket-seller-admin-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Admin Notices */
+.wc-ticket-seller-admin-notice {
+    padding: 12px 15px;
+    margin: 15px 0;
+    border-left: 4px solid #46b450;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.wc-ticket-seller-admin-notice.error {
+    border-left-color: #dc3232;
+}
+
+.wc-ticket-seller-admin-notice.warning {
+    border-left-color: #ffb900;
+}
+
+.wc-ticket-seller-admin-notice.info {
+    border-left-color: #00a0d2;
+}
+
+/* Event Status */
+.event-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.status-published {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.status-draft {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+}
+
+.status-cancelled {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+/* Ticket Types */
+.ticket-type {
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.ticket-type h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.ticket-type .remove-ticket-type {
+    color: #a00;
+    margin-top: 10px;
+}
+
+.ticket-type .remove-ticket-type:hover {
+    color: #dc3232;
+}
+
+/* WP Post Box Styling */
+.postbox {
+    margin-bottom: 20px;
+}
+
+.postbox .hndle {
+    cursor: default !important;
+    border-bottom: 1px solid #eee;
+    margin: 0;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.postbox .inside {
+    padding: 12px;
+    margin: 0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 782px) {
+    .wc-ticket-seller-admin-form .form-table th {
+        padding-bottom: 0;
+    }
+    
+    .wc-ticket-seller-admin-form .form-table td {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .wc-ticket-seller-admin-table th,
+    .wc-ticket-seller-admin-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .wc-ticket-seller-admin-table tr {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid #e5e5e5;
+    }
+    
+    .wc-ticket-seller-admin-table td:before {
+        content: attr(data-colname);
+        font-weight: 600;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+/* Dashboard widgets */
+.wc-ticket-seller-dashboard-widget {
+    padding: 12px;
+}
+
+.wc-ticket-seller-dashboard-widget-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.wc-ticket-seller-dashboard-stat {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wc-ticket-seller-dashboard-stat-value {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.wc-ticket-seller-dashboard-stat-label {
+    color: #777;
+}
+
+
+/* Event Status */
+.event-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.status-published {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.status-draft {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+}
+
+.status-cancelled {
+    background-color: #f2dede;
+    color: #a94442;
+}
